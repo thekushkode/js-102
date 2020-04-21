@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Starter Kit</title>
+    <style>
+        body {
+            font-size: 24px;
+        }
+        span {
+            color: blue;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            border: 3px solid blue;
+            border-radius: 25px;
+            margin: 0 50px 0 50px;
+        }
+
+        .background {
+    background: url(chickfila.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    color: black;
+    position: absolute;
+}
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            /* justify-content: end; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Make-No-Sense Madlib</h1>
+    <br>
+    <br>
+    <div>
+        <form>
+            <label>
+                <input type="text" id="adj1Input" value="" placeholder="Adjective"/>
+            </label>
+            <label>
+                <input type="text" id="noun1Input" value="" placeholder="Noun"/>
+            </label>
+            <label>
+                <input type="text" id="verb1Input" value="" placeholder="Past Tense Verb 🤣"/>
+            </label>
+            <label>
+                <input type="text" id="adj2Input" value="" placeholder="Adjective"/>
+            </label>
+            <label>
+                <input type="text" id="noun2Input" value="" placeholder="Noun"/>
+            </label>
+            <label>
+                <input type="text" id="verb2Input" value="" placeholder="Past Tense Verb 🤣"/>
+            </label>
+            <label>
+                <input type="text" id="noun3Input" value="" placeholder="Noun"/>
+            </label>
+            <button type="submit" id="clickMe">Leggo!</button>
+        </form>
+        <p>
+            Today I went to the zoo. I saw a(n)
+            <span id="adj1">__________</span> 
+            <span id="noun1">___________</span> jumping up and down in its tree.
+            He <span id="verb1">__________</span> 
+            through the large tunnel that led to its <span id="adj2">__________</span> 
+            <span id="noun2">________</span>. I got some peanuts and <span id="verb2">_______________</span>
+            them through the cage to a gigantic gray <span id="noun3">__________</span>
+            towering above my head. Feeding that animal made
+            me hungry. Sooooo, I went to Chic-Fil-A. 👅💦💦
+        </p>
+    </div>
+    <div>
+        <section></section>
+    </div>
+</body>
+<script src="./madlibScript.js"></script>
+
+</html>
