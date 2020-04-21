@@ -26,10 +26,12 @@ function cipher(string) {
         let char = string.charAt(i);
         let charIndex = alph.indexOf(char);
         let cipherIndex = charIndex + 13;
-        console.log(newString);
+        // console.log(newString);
         if (cipherIndex >= 26) {
             cipherIndex -= 26
             newString = newString.replace(string.charAt(i), alph[cipherIndex]);
+        } else if (string.charAt(i) === " ") {
+            newString += " ";
         } else {
             newString = newString.replace(string.charAt(i), alph[cipherIndex]);
         }
