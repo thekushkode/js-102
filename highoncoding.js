@@ -151,3 +151,41 @@ parag7.style.color = "white";
 
 div5.appendChild(parag6);
 div5.appendChild(parag7);
+
+// ******************************************
+
+const footer = document.createElement("footer");
+footer.style.display = "flex";
+footer.style.flexDirection = "column";
+container.appendChild(footer);
+
+const div6 = document.createElement("div");
+div6.style.backgroundColor = "#2CA1FB";
+div6.style.color = "white";
+div6.style.display = "flex";
+div6.style.alignItems = "center";
+// div6.style.justifyContent = "space-around";
+
+footer.appendChild(div6);
+
+const parag8 = document.createElement("p");
+parag8.textContent = "Thanks for reading HighOnCoding!";
+parag8.style.paddingLeft = "20px";
+parag8.style.fontSize = "20px";
+parag8.style.fontWeight = "100";
+
+div6.appendChild(parag8);
+
+// const link3 = document.createElement("a");
+// link3.textContent = "Follow Us!";
+// link3.href = "#";
+// link3.style.color = "white";
+// link3.style.fontWeight = "100";
+// link3.style.fontSize = "20px";
+// link3.style.textDecoration = "none";
+// div6.appendChild(link3);
+
+
+
+
+
