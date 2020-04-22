@@ -29,6 +29,9 @@ link1.style.color = "white";
 link1.style.fontWeight = "600";
 link1.style.fontSize = "20px";
 link1.style.textDecoration = "none";
+// link1.onmouseover = function() {
+//     link1.style.textShadow = "5px 5px black;";
+// };
 topNav.appendChild(link1);
 
 const link2 = document.createElement("a");
@@ -63,7 +66,7 @@ div1.appendChild(heading2);
 
 const parag1 = document.createElement("p");
 parag1.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum quibusdam deserunt repellendus voluptatum a reprehenderit quas voluptatibus. Similique, laborum tempora exercitationem vitae quae incidunt accusantium nesciunt rem dignissimos veniam?";
-parag1.style.margin = "20px";
+parag1.style.margin = "10px 20px 20px 20px";
 
 div1.appendChild(parag1);
 
@@ -109,8 +112,6 @@ parag4.style.color = "white";
 div3.appendChild(parag3);
 div3.appendChild(parag4);
 
-//  spppppppppppppppppppppppp
-
 const div4 = document.createElement("div");
 div4.style.display = "flex";
 div4.style.flexDirection = "column";
@@ -152,8 +153,6 @@ parag7.style.color = "white";
 div5.appendChild(parag6);
 div5.appendChild(parag7);
 
-// ******************************************
-
 const footer = document.createElement("footer");
 footer.style.display = "flex";
 footer.style.flexDirection = "column";
@@ -163,8 +162,7 @@ const div6 = document.createElement("div");
 div6.style.backgroundColor = "#2CA1FB";
 div6.style.color = "white";
 div6.style.display = "flex";
-div6.style.alignItems = "center";
-// div6.style.justifyContent = "space-around";
+div6.style.flexDirection = "column";
 
 footer.appendChild(div6);
 
@@ -176,14 +174,51 @@ parag8.style.fontWeight = "100";
 
 div6.appendChild(parag8);
 
-// const link3 = document.createElement("a");
-// link3.textContent = "Follow Us!";
-// link3.href = "#";
-// link3.style.color = "white";
-// link3.style.fontWeight = "100";
-// link3.style.fontSize = "20px";
-// link3.style.textDecoration = "none";
-// div6.appendChild(link3);
+const parag9 = document.createElement("p");
+parag9.textContent = "For more content, join our mailing list below:";
+parag9.style.paddingLeft = "20px";
+parag9.style.fontSize = "13px";
+parag9.style.fontWeight = "400";
+parag9.style.marginTop = "-10px";
+
+div6.appendChild(parag9)
+
+// How to add a css class via JS
+// const emailClass = document.createElement("style");
+// emailClass.type = "text/css";
+// emailClass.innerHTML =".emailForm {enter styles}";
+// document.getElementsByTagName('form').appendChild(emailClass);
+// document.getElementById("label").className = "emailForm";
+
+
+const form1 = document.createElement("form");
+form1.style.paddingLeft = "20px";
+form1.style.paddingBottom = "20px";
+div6.appendChild(form1);
+
+const label1 = document.createElement("label");
+form1.appendChild(label1);
+
+// Adding an ID via JS
+const input1 = document.createElement("input");
+input1.setAttribute("id", "email");
+input1.setAttribute("value", "");
+input1.setAttribute("placeholder", "Enter Email 📧");
+label1.appendChild(input1);
+
+const button1 = document.createElement("button");
+button1.setAttribute("type", "submit");
+button1.setAttribute("id", "clickMe");
+button1.textContent = "Submit";
+button1.style.marginLeft = "10px";
+form1.appendChild(button1);
+
+// myButton.addEventListener("click", function(e) {
+//     e.preventDefault();
+//     noun1.innerHTML = noun1Input.value;
+//     section.classList.add("background");
+//   });
+
 
 
 
